@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Gastos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gestor de Gastos com Cartões de Crédito</h1>
+
+    <form id="gasto-form">
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" step="0.01" required>
+        
+        <label for="nome">Nome do Gasto:</label>
+        <input type="text" id="nome" required>
+        
+        <label for="pessoa">Pessoa:</label>
+        <select id="pessoa" required>
+            <option value="meu">Meu</option>
+            <option value="layane">Layane</option>
+            <option value="mãe">Mãe</option>
+            <option value="pai">Pai</option>
+            <option value="Sara">Sara</option>
+
+        </select>
+
+        <label for="cartao">Cartão:</label>
+        <select id="cartao" required>
+            <option value="cartao1">Nubank PJ</option>
+            <option value="cartao2">Nubank</option>
+            <option value="cartao3">Santander</option>
+        </select>
+        
+        <button type="submit">Adicionar Gasto</button>
+    </form>
+
+    <table id="tabela-gastos">
+        <thead>
+            <tr>
+                <th>Valor</th>
+                <th>Nome do Gasto</th>
+                <th>Pessoa</th>
+                <th>Cartão</th>
+                <th>Pago</th>
+                <th>Remover</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div>
+        <label for="filtro-cartao">Filtrar por cartão:</label>
+        <select id="filtro-cartao">
+            <option value="">Todos</option>
+            <option value="cartao1">Nubank PJ</option>
+            <option value="cartao2">Nubank</option>
+            <option value="cartao3">Santander</option>
+        </select>
+    </div>
+    <div id="total-e-botao">
+        <div id="totais-cartoes">
+            <p>Nubank PJ: R$ <span id="total-cartao1">0,00</span></p>
+            <p>Nubank: R$ <span id="total-cartao2">0,00</span></p>
+            <p>Santander: R$ <span id="total-cartao3">0,00</span></p>
+        </div>
+            <div id="total">Total Geral: R$ 0,00</div>
+            <button id="gerar-txt">Gerar Arquivo .txt</button>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
