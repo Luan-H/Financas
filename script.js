@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     gerarTxtButton.addEventListener('click', () => {
         let conteudo = 'Gastos:\n\n';
         gastos.forEach(gasto => {
-            conteudo += `Valor: R$ ${gasto.valor.toFixed(2)}, Nome: ${gasto.nome}, Pessoa: ${gasto.pessoa}, Cartão: ${gasto.cartao}, Pago: ${gasto.pago ? 'Sim' : 'Não'}\n`;
+            conteudo += `Valor: R$ ${gasto.valor.toFixed(2)}- Nome: ${gasto.nome}, Pessoa: ${gasto.pessoa}, Pago: ${gasto.pago ? 'Sim' : 'Não'}\n`;
         });
 
         const blob = new Blob([conteudo], { type: 'text/plain' });
