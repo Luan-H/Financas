@@ -20,7 +20,8 @@ Este projeto é uma aplicação web simples para o gerenciamento de gastos, perm
 
 ## Como usar
 
-1. Abra o arquivo `index.html` no seu navegador.
+1. Abra o arquivo `index.html` no seu navegador ou visite a página online:
+   - [GitHub Pages](https://luan-h.github.io/Financas/)
 2. Adicione os gastos usando o formulário.
 3. Os gastos serão automaticamente exibidos na tabela abaixo.
 4. Você pode marcar os gastos como "pagos" e removê-los conforme necessário.
